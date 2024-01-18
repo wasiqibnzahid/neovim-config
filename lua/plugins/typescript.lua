@@ -4,6 +4,7 @@ return {
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
     opts = {},
   },
+  { "typescript-language-server", enabled = false },
   -- Disabled tsserver because we have pmizio-ts-tools and its faster - double intellisense was bothersome
   -- This is not working fine, need to confirm syntax
   -- {
@@ -11,9 +12,7 @@ return {
   --   {
   --     opts = {
   --       servers = {
-  --         tsserver = {
-  --           enabled = false,
-  --         },
+  --         tsserver = {},
   --       },
   --     },
   --   },

@@ -4,6 +4,7 @@ return {
   --   opts = {
   --     transparent = true,
   --   },
+  --   redasdasd
   -- },
   {
     "scottmckendry/cyberdream.nvim",
