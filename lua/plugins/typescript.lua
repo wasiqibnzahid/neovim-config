@@ -5,16 +5,17 @@ return {
     opts = {},
   },
   -- Disabled tsserver because we have pmizio-ts-tools and its faster - double intellisense was bothersome
-  {
-    "neovim/nvim-lspconfig",
-    {
-      opts = {
-        servers = {
-          tsserver = {
-            enabled = false,
-          },
-        },
-      },
-    },
-  },
+  -- This is not working fine, need to confirm syntax
+  -- {
+  --   "neovim/nvim-lspconfig",
+  --   {
+  --     opts = {
+  --       servers = {
+  --         tsserver = {
+  --           enabled = false,
+  --         },
+  --       },
+  --     },
+  --   },
+  -- },
 }
