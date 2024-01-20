@@ -3,4 +3,7 @@
 -- Add any additional keymaps here
 local Util = require("lazyvim.util")
 local map = Util.safe_keymap_set
+
 map({ "n", "x" }, "<C-Left>", "v:count == 0 ? ':execute \"normal! <C-B>n\"<CR>' : ''", { expr = true, silent = true })
+map({ "n", "x" }, "<C-d>", "<C-d>zz")
+map({ "n", "x" }, "<C-u>", "<C-u>zz")
