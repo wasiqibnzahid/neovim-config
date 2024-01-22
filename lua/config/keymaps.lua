@@ -7,3 +7,5 @@ local map = Util.safe_keymap_set
 map({ "n", "x" }, "<C-Left>", "v:count == 0 ? ':execute \"normal! <C-B>n\"<CR>' : ''", { expr = true, silent = true })
 map({ "n", "x" }, "<C-d>", "<C-d>zz")
 map({ "n", "x" }, "<C-u>", "<C-u>zz")
+vim.keymap.del("n", "<leader>sg")
+vim.keymap.set("n", "<leader>sg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")

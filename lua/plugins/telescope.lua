@@ -1,10 +1,11 @@
 return {
+  { "nvim-telescope/telescope-live-grep-args.nvim" },
   {
+
     "nvim-telescope/telescope.nvim",
     opts = {
-      -- file_ignore_patterns = { "node_modules", "env" },
       defaults = {
-        file_ignore_patterns = { "node_modules", "env" },
+        file_ignore_patterns = { "node_modules", ".git/", "env/" },
       },
     },
   },
