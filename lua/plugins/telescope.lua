@@ -6,6 +6,8 @@ return {
     keys = {
       -- Disabled this since i am using telesciope with args - keybind is in keymaps.lua file
       { "<leader>sg", false },
+      { "<leader><Space>", false },
+      { "<C-p>", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
     },
     opts = {
       defaults = {
