@@ -8,13 +8,13 @@ This is present in scripts.sh file in this folder
 ./scripts.sh
 ```
 
-Install ripgrep for telescope in-file search in your device, also install tmux for terminal session management
-You need to install gcc in your device, in windows use chocolatey
+Install ripgrep for telescope in-file search in your device, also install tmux for terminal session management  
+You need to install gcc in your device, in windows use chocolatey  
 In WSL,
 
 # Installing neovim
 
-apt version is out of date, use snap store.
+apt version is out of date, use snap store.  
 Run this to make it globally accessible via nvim command
 
 ```
@@ -48,7 +48,7 @@ In most cases src would be ~/.config/nvim/.tmux.conf
 
 # Reference
 
-Make sure to store the vim config source directory under the name $VIM_CONF, easier to access
+Make sure to store the vim config source directory under the name $VIM_CONF, easier to access  
 Add it in source bashrc file
 
 ```
