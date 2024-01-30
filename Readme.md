@@ -1,7 +1,12 @@
 # All these commands are present in scripts.sh
 
 For setting up this config, you will need to have all required things installed such as npm, node, python
-This is present in scripts.bash file in this folder
+
+This is present in scripts.sh file in this folder
+
+```
+./scripts.sh
+```
 
 Install ripgrep for telescope in-file search in your device, also install tmux for terminal session management
 You need to install gcc in your device, in windows use chocolatey
