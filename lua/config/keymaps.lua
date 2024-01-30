@@ -15,4 +15,8 @@ vim.keymap.set("n", "<leader>sg", ":lua require('telescope').extensions.live_gre
 vim.keymap.del({ "i", "x", "n", "s" }, "<C-s>")
 vim.keymap.set({ "i", "x", "n", "s", "v" }, "<C-s>", function()
   Util.format({ force = true })
-end, { desc = "Format" })
+  -- Return to normal mode if not in it
+  if vim.fn.mode() ~= "n" then
+    vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "n", true)
+  end
+end, { desc = "Format and return to normal mode" })
