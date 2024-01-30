@@ -1,6 +1,6 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
-
+local Util = require("lazyvim.util")
 vim.keymap.set(
   { "n", "x" },
   "<C-Left>",
@@ -11,3 +11,8 @@ vim.keymap.set({ "n", "x" }, "<C-d>", "<C-d>zz")
 vim.keymap.set({ "n", "x" }, "<C-u>", "<C-u>zz")
 -- Disabled this keybind default in telescope.lua file --  be careful when removing
 vim.keymap.set("n", "<leader>sg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+-- format on save so we turn on autosave and format on C-s
+vim.keymap.del({ "i", "x", "n", "s" }, "<C-s>")
+vim.keymap.set({ "i", "x", "n", "s", "v" }, "<C-s>", function()
+  Util.format({ force = true })
+end, { desc = "Format" })
