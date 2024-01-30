@@ -8,9 +8,18 @@ This is present in scripts.sh file in this folder
 ./scripts.sh
 ```
 
-Install ripgrep for telescope in-file search in your device, also install tmux for terminal session management  
+# Install ripgrep
+
+Install ripgrep for telescope in-file search in your device, also install tmux for terminal session management
+
+# Installing gcc
+
 You need to install gcc in your device, in windows use chocolatey  
 In WSL,
+
+```
+ sudo install gcc
+```
 
 # Installing neovim
 
@@ -21,12 +30,6 @@ Run this to make it globally accessible via nvim command
  sudo apt install snapd
  sudo snap install nvim --classic
  sudo ln -s /snap/bin/nvim /usr/bin/nvim
-```
-
-# Installing gcc
-
-```
- sudo install gcc
 ```
 
 # Installing lazygit
