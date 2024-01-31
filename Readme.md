@@ -49,13 +49,17 @@ git:
     pager: delta --dark --paging=never
 ```
 
+You can easily move the file in the git repo and link it to the original
+
+## Note - THIS DOES NOT WORK - Too many symbolic links error
+
+```
+ln -s <repo_directory>/config.yml ~/.config/lazygit/config.yml
+```
+
 # Install Delta for lazygit side-by-side diffs
 
 Download the package and install it using
-
-```
-sudo dpkg -i <file_path>
-```
 
 # Configuring tmux
 
