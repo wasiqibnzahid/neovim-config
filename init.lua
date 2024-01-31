@@ -8,7 +8,7 @@ vim.opt.guicursor = "n:block-Cursor"
 -- vim.cmd.colorscheme("catppuccin")
 --
 --
--- vim.cmd("colorscheme kanagawa-dragon")
+vim.cmd("colorscheme catppuccin")
 -- require("cmp").config.formatting = {
 --   format = require("tailwindcss-colorizer-cmp").formatter,
 -- }

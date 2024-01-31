@@ -14,21 +14,28 @@ return {
   -- },
 
   {
-    "scottmckendry/cyberdream.nvim",
-    lazy = false,
+    "catppuccin/nvim",
+    name = "catppuccin",
     priority = 1000,
-    config = function()
-      require("cyberdream").setup({
-        -- Recommended - see "Configuring" below for more config options
-        transparent = true,
-        italic_comments = true,
-        hide_fillchars = true,
-        borderless_telescope = true,
-      })
-
-      vim.cmd("colorscheme cyberdream") -- set the colorscheme
-    end,
+    config = { transparent_background = true },
   },
+
+  -- {
+  --   "scottmckendry/cyberdream.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     require("cyberdream").setup({
+  --       -- Recommended - see "Configuring" below for more config options
+  --       transparent = true,
+  --       italic_comments = true,
+  --       hide_fillchars = true,
+  --       borderless_telescope = true,
+  --     })
+  --
+  --     vim.cmd("colorscheme cyberdream") -- set the colorscheme
+  --   end,
+  -- },
 
   {
     "nvim-notify",
