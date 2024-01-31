@@ -40,7 +40,11 @@ Run this to make it globally accessible via nvim command
 ```
 
 Configure lazygit, for side by side diff to be laded by delta add this to lazygit config  
+Linux:  
 ~/.config/lazygit/config.yml
+
+Windows:  
+%APPDATA%\lazygit\config.yml
 
 ```
 git:
@@ -82,7 +86,9 @@ Add it in source bashrc file
 
 # Git
 
-Add this to your git config file ~/.gitconfig
+Add this to your git config file  
+Linux And Windows:  
+~/.gitconfig
 
 ```
 [core]
