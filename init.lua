@@ -3,8 +3,11 @@ require("config.lazy")
 
 vim.lsp.set_log_level("debug")
 vim.g.autoformat = false
-vim.opt.guicursor = ""
+-- Set cursor to block in all modes
+vim.opt.guicursor = "n:block-Cursor"
 -- vim.cmd.colorscheme("catppuccin")
+--
+--
 -- vim.cmd("colorscheme kanagawa-dragon")
 -- require("cmp").config.formatting = {
 --   format = require("tailwindcss-colorizer-cmp").formatter,

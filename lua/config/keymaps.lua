@@ -16,6 +16,7 @@ vim.keymap.del({ "i", "x", "n", "s" }, "<C-s>")
 vim.keymap.set({ "i", "x", "n", "s", "v" }, "<C-s>", function()
   Util.format({ force = true })
   -- Return to normal mode if not in it
+  vim.cmd("w")
   if vim.fn.mode() ~= "n" then
     vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "n", true)
   end

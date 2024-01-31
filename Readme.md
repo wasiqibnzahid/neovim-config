@@ -39,6 +39,24 @@ Run this to make it globally accessible via nvim command
  sudo install lazygit /usr/local/bin
 ```
 
+Configure lazygit, for side by side diff to be laded by delta add this to lazygit config  
+~/.config/lazygit/config.yml
+
+```
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+```
+
+# Install Delta for lazygit side-by-side diffs
+
+Download the package and install it using
+
+```
+sudo dpkg -i <file_path>
+```
+
 # Configuring tmux
 
 The config is stored here in the file, if using linux the tmux config, create a symlink using the following command to store a pointer to the file in the home directory so that the config is loaded
@@ -56,4 +74,27 @@ Add it in source bashrc file
 
 ```
  export VIM_CONF="${HOME}/.config/nvim"
+```
+
+# Git
+
+Add this to your git config file ~/.gitconfig
+
+```
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    side-by-side = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
 ```
