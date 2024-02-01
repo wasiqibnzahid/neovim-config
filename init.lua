@@ -8,7 +8,8 @@ vim.opt.guicursor = "n:block-Cursor"
 -- vim.cmd.colorscheme("catppuccin")
 --
 --
-vim.cmd("colorscheme catppuccin")
+vim.g.nightflyTransparent = true
+vim.cmd("colorscheme nightfly")
 -- require("cmp").config.formatting = {
 --   format = require("tailwindcss-colorizer-cmp").formatter,
 -- }

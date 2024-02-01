@@ -14,11 +14,16 @@ return {
   -- },
 
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "bluz71/vim-nightfly-colors",
     priority = 1000,
-    config = { transparent_background = true },
+    namge = "nightfly",
   },
+  -- {
+  --   "catppuccin/nvim",
+  --   name = "catppuccin",
+  --   priority = 1000,
+  --   config = { transparent_background = true },
+  -- },
 
   -- {
   --   "scottmckendry/cyberdream.nvim",
