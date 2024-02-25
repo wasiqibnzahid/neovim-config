@@ -1,9 +1,14 @@
 sudo apt-get update
+sudo apt install -y snapd
+sudo snap install -y nvim --classic
+sudo ln -s /snap/bin/nvim /usr/bin/nvim
 sudo apt-get install -y git curl
 sudo apt-get install -y build-essential \
 	build-essential automake autoconf m4 tk-dev libncurses5-dev libwxgtk3.0-gtk3-dev libwxgtk-webview3.0-gtk3-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop libxml2-utils libncurses-dev \
 	zlib1g zlib1g-dev libssl-dev libbz2-dev libsqlite3-dev libreadline-dev libffi-dev lzma-dev liblzma-dev \
 	coreutils unzip curl jq
+
+sudo apt-get install ripgrep
 
 #asdf
 echo "I HAVE STARTED"
@@ -63,7 +68,12 @@ asdf global rust latest
 sudo apt install snapd
 sudo snap install nvim --classic
 sudo ln -s /snap/bin/nvim /usr/bin/nvim
-sudo install gcc
 
 LAZYGIT*VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]\*') curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit*${LAZYGIT_VERSION}\_Linux_x86_64.tar.gz" tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
+
+# Creating link for tmux config
+rm -rf ~/.tmux.conf
+ln -s ./.tmux.conf ~/.tmux.conf
+
+sudo install gcc
