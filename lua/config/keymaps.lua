@@ -21,5 +21,3 @@ vim.keymap.set({ "i", "x", "n", "s", "v" }, "<C-s>", function()
     vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "n", true)
   end
 end, { desc = "Format and return to normal mode" })
-vim.keymap.del({ "i", "x", "n", "s", "v" }, "<C-i>")
-vim.keymap.set("n", "<C-y>", ":lua require('dap').step_over()<CR>")
