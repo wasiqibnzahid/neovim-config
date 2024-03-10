@@ -2,9 +2,9 @@ return {
   -- {
   --   "rebelot/kanagawa.nvim",
   --   opts = {
-  --     transparent = true,
+  --     -- transparent = true,
   --   },
-  --   redasdasd
+  --   name="kanagawa"
   -- },
   --
   -- {
@@ -12,12 +12,13 @@ return {
   --   name = "catppuccin",
   --   priority = 1000,
   -- },
-
+  --
   {
     "bluz71/vim-nightfly-colors",
     priority = 1000,
     namge = "nightfly",
   },
+
   -- {
   --   "catppuccin/nvim",
   --   name = "catppuccin",
