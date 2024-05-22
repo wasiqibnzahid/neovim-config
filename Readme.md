@@ -108,3 +108,20 @@ Linux And Windows:
 [diff]
     colorMoved = default
 ```
+
+
+# Telescope
+There is some issue with Telescope in windows about fzf - a simple fix
+install gcc and make using 
+```
+$ choco install <item>
+```
+And then do
+```
+:Lazy
+```
+And go to the package with fzf - I'm not sure if deleting and reinstalling it fixed it or if it was pressing "gd" when on it - try both
+
+
+
+

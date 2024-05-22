@@ -3,6 +3,9 @@ return {
   {
 
     "nvim-telescope/telescope.nvim",
+    dependencies = {
+      "nvim-telescope/telescope-fzf-native.nvim",
+    },
     keys = {
       -- Disabled this since i am using telesciope with args - keybind is in keymaps.lua file
       { "<leader>sg", false },
