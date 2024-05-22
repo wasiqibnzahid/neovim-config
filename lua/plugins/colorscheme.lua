@@ -45,7 +45,9 @@ return {
 
   {
     "nvim-notify",
-    config = { background_colour = "#000000" },
+    config = { 
+      -- background_colour = "#000000" 
+    },
   },
   -- { "rose-pine/neovim", name = "rose-pine" },
   -- {

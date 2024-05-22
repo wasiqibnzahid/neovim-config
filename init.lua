@@ -10,6 +10,9 @@ vim.opt.guicursor = "n:block-Cursor"
 --
 vim.g.nightflyTransparent = true
 vim.cmd("colorscheme nightfly")
+
+-- vim.g.nightflyTransparent = true
+-- vim.lsp.set_log_level("off")
 -- require("cmp").config.formatting = {
 --   format = require("tailwindcss-colorizer-cmp").formatter,
 -- }
