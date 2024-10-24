@@ -11,11 +11,6 @@ vim.opt.guicursor = "n:block-Cursor"
 -- vim.g.nightflyTransparent = true
 vim.cmd("colorscheme nightfly")
 vim.opt.relativenumber = true
+vim.cmd("set relativenumber")
 
--- vim.g.nightflyTransparent = true
--- vim.lsp.set_log_level("off")
--- require("cmp").config.formatting = {
---   format = require("tailwindcss-colorizer-cmp").formatter,
--- }
-
--- vim.cmd("set nu!")
+vim.g.nightflyTransparent = true
