@@ -2,6 +2,7 @@ return {
   {
     "rebelot/kanagawa.nvim",
     opts = {
+      transparent = true
     },
     name = "kanagawa",
   },

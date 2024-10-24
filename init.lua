@@ -9,8 +9,8 @@ vim.opt.guicursor = "n:block-Cursor"
 --
 --
 -- vim.g.nightflyTransparent = true
-vim.cmd("colorscheme nightfly")
+vim.cmd("colorscheme kanagawa")
+vim.g.nightflyTransparent = true
 vim.opt.relativenumber = true
 vim.cmd("set relativenumber")
 
-vim.g.nightflyTransparent = true
