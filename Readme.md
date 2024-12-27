@@ -109,19 +109,23 @@ Linux And Windows:
     colorMoved = default
 ```
 
-
 # Telescope
+
 There is some issue with Telescope in windows about fzf - a simple fix
-install gcc and make using 
+install gcc and make using
+
 ```
 $ choco install <item>
 ```
+
 And then do
+
 ```
 :Lazy
 ```
+
 And go to the package with fzf - I'm not sure if deleting and reinstalling it fixed it or if it was pressing "gd" when on it - try both
 
-
-
-
+Tried this docker extension
+`https://github.com/dgrbrady/nvim-docker?tab=readme-ov-file#packer`
+Would not recommend, only lets you view containers cannot attach shell. Can restart and some features but not a good alternative for VS Code's extensions

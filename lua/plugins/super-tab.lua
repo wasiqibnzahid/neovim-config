@@ -79,20 +79,12 @@ return {
     },
   },
   {
-    { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
   },
   {
     "neovim/nvim-lspconfig",
     opts = {
-      servers = { eslint = {} },
-      setup = {
-        eslint = function()
-          require("lazyvim.util").lsp.on_attach(function(client)
-            client.server_capabilities.documentFormattingProvider = false
-          end)
-        end,
-      },
+      setup = {},
     },
   },
 }

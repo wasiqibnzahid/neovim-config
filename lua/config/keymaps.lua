@@ -1,6 +1,7 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 local Util = require("conform")
+local nvim_docker = require("nvim-docker")
 vim.keymap.set(
   { "n", "x" },
   "<C-Left>",
@@ -21,3 +22,4 @@ vim.keymap.set({ "i", "x", "n", "s", "v" }, "<C-s>", function()
     vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "n", true)
   end
 end, { desc = "Format and return to normal mode" })
+vim.keymap.set("n", "<leader>C", nvim_docker.containers.list_containers)

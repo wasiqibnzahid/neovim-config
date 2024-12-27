@@ -14,3 +14,4 @@ vim.g.nightflyTransparent = true
 vim.opt.relativenumber = true
 vim.cmd("set relativenumber")
 
+vim.cmd("set clipboard=unnamedplus")
